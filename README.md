@@ -17,21 +17,18 @@ npm install jsx2dom --save
 
 ### render:
 
-js
 ```
 import jsx2dom, { render } from 'jsx2dom'
 
 render(<h1>Hello World!</h1>, '#app')
 ```
 
-html: 
 ```
 <div id="#app"></div>
 ```
 
 ### component:
 
-js
 ```
 import jsx2dom, { render } from 'jsx2dom'
 
@@ -46,7 +43,6 @@ export default Welcome;
 
 ### map:
 
-js
 ```
 const items = ['foo', 'bar', 'baz'];
 
@@ -67,7 +63,6 @@ export default List;
 
 ### event listener:
 
-js
 ```
 import jsx2dom, { render } from 'jsx2dom'
 
@@ -84,7 +79,6 @@ export default ButtonWelcome;
 
 ### ref:
 
-js
 ```
 import jsx2dom, { render } from 'jsx2dom'
 
