@@ -1,23 +1,23 @@
 ## jsx2dom
-### lightweight library for render JSX directly into DOM
+Lightweight library to render JSX directly into DOM.
 
 ## Installation
 
-### yarn
+### yarn:
 ```
 yarn add jsx2dom
 ```
 
-### npm
+### npm:
 ```
 npm install jsx2dom --save
 ```
 
 ## Examples
 
-### render
+### render:
 
-js:
+js
 ```
 import jsx2dom, { render } from 'jsx2dom'
 
@@ -29,9 +29,9 @@ html:
 <div id="#app"></div>
 ```
 
-### component
+### component:
 
-js:
+js
 ```
 import jsx2dom, { render } from 'jsx2dom'
 
@@ -41,17 +41,12 @@ function Welcome({ name }){
   );
 }
 
-render(<Welcome name="Andrew" />, "#app);
+export default Welcome;
 ```
 
-html: 
-```
-<div id="#app"></div>
-```
+### map:
 
-### map
-
-js:
+js
 ```
 const items = ['foo', 'bar', 'baz'];
 
@@ -70,9 +65,9 @@ function Item({ text }){
 export default List;
 ```
 
-### event listener
+### event listener:
 
-js:
+js
 ```
 import jsx2dom, { render } from 'jsx2dom'
 
@@ -87,9 +82,9 @@ function ButtonWelcome({ name }){
 export default ButtonWelcome;
 ```
 
-### ref
+### ref:
 
-js:
+js
 ```
 import jsx2dom, { render } from 'jsx2dom'
 
