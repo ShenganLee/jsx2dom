@@ -36,7 +36,7 @@ Please look into [example](https://github.com/jakub-gawlas/jsx2dom/tree/master/e
 ### render:
 
 ```js
-import jsx2dom, { render } from ***jsx2dom***
+import jsx2dom, { render } from 'jsx2dom'
 
 render(<h1>Hello World!</h1>, '#app')
 ```
