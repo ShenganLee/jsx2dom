@@ -16,9 +16,9 @@ npm install jsx2dom --save
 
 ## How use
 
-You have to transpile **JSX** syntax with using `babel-plugin-transform-react-jsx`, by default plugin is configured to work with **React.js**, so you have to configure plugin by set options parameter `pragma` to value `jsx2dom`.
+You have to transpile **JSX** syntax with using `babel-plugin-transform-react-jsx`, by default plugin is configured to work with **React.js**, so you have to configure plugin by set parameter `pragma` to value `jsx2dom` in options.
 
-*Sample `.babelrc` file*:
+*Sample file `.babelrc` *:
 ```json
 {
   "plugins": [
