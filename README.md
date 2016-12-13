@@ -1,6 +1,7 @@
 ## jsx2dom
 Lightweight library to render JSX directly into DOM.
 
+
 ## Installation
 
 ### yarn:
@@ -13,12 +14,29 @@ yarn add jsx2dom
 npm install jsx2dom --save
 ```
 
+## How use
+
+You have to transpile **JSX** syntax with using `babel-plugin-transform-react-jsx`, by default plugin is configured to work with **React.js**, so you have to configure plugin by set options parameter `pragma` to value `jsx2dom`.
+
+*Sample `.babelrc` file*:
+```json
+{
+  "plugins": [
+    ["transform-react-jsx", {
+      "pragma": "jsx2dom"
+    }]
+  ]
+}
+```
+
+Please look into [example](https://github.com/jakub-gawlas/jsx2dom/tree/master/example) to see simple project using ***jsx2dom***.
+
 ## Examples
 
 ### render:
 
-```
-import jsx2dom, { render } from 'jsx2dom'
+```js
+import jsx2dom, { render } from ***jsx2dom***
 
 render(<h1>Hello World!</h1>, '#app')
 ```
@@ -29,7 +47,7 @@ render(<h1>Hello World!</h1>, '#app')
 
 ### component:
 
-```
+```js
 import jsx2dom, { render } from 'jsx2dom'
 
 function Welcome({ name }){
@@ -43,7 +61,7 @@ export default Welcome;
 
 ### map:
 
-```
+```js
 const items = ['foo', 'bar', 'baz'];
 
 const List = (
@@ -63,7 +81,7 @@ export default List;
 
 ### event listener:
 
-```
+```js
 import jsx2dom, { render } from 'jsx2dom'
 
 function ButtonWelcome({ name }){
@@ -79,7 +97,7 @@ export default ButtonWelcome;
 
 ### ref:
 
-```
+```js
 import jsx2dom, { render } from 'jsx2dom'
 
 let refInput = null;
